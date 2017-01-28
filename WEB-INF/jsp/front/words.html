@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Entries Online - Words</title>
+	<link rel="favicon" href="../images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.useso.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../../../dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../dist/css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../../../dist/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../../dist/css/style.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../../dist/js/html5shiv.js"></script>
+	<script src="../../dist/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- Button for smallest screens -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../../../index.html"> <img src="../../../images/logo.png" alt="Techro HTML5 template"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right mainNav">
+        <li><a href="../../../index.html">首页</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="courses.html">课程</a></li>
+        <li class="active"><a href="words.html">单词</a></li>
+        <li><a href="listening.html">听力</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+        <li>
+          <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">登录</button>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+<!-- /.navbar -->
+
+<!-- modal -->
+<!-- modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header btn-success" style="border-top-left-radius:5px;border-top-right-radius:5px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">起点账号登录</h4>
+      </div>
+      <div class="modal-body" id="login">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="well" id="log_form">
+              <form id="loginForm" method="POST" action="#">
+                <div class="form-group has-feedback has-feedback-left">
+                  <label class="control-label">用户名</label>
+                  <input type="text" class="form-control" placeholder="用户名" />
+                  <i class="glyphicon glyphicon-user form-control-feedback"></i> <span class="help-block"></span> </div>
+                <div class="form-group  has-feedback has-feedback-left ">
+                  <label for="password" class="control-label">密码</label>
+                  <input type="password" class="form-control" placeholder="密码" id="password" name="password" value="" required="" title="Please enter your password">
+                  <i class="form-control-feedback glyphicon glyphicon-lock"></i> <span class="help-block"></span> </div>
+                <div id="loginErrorMsg" class="alert alert-error hide">用户名或密码错误</div>
+                <div class="checkbox">
+                  <label>
+                  <input type="checkbox" name="remember" id="remember">
+                  记住密码</label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">登录</button>
+                <p> <a class="pull-left" data-toggle="collapse" href="" aria-expanded="false" aria-controls="" id="getUname">忘记用户名</a> <a class="pull-right" data-toggle="collapse" href="" aria-expanded="false" aria-controls="" id="getPwd">忘记密码</a> </p>
+              </form>
+            </div>
+            <!-- well -->
+            <div class="collapse" id="forgot_uname">
+              <div class="form-group has-feedback has-feedback-left">
+                <label class="control-label">手机号</label>
+                <input type="email" class="form-control" placeholder="手机号" />
+                <i class="glyphicon glyphicon-earphone form-control-feedback"></i> <span class="help-block"></span> </div>
+              <button type="submit" class="btn btn-success btn-block">确定</button>
+              <p><a id="back">返回登录</a></p>
+            </div>
+            <div class="collapse" id="forgot_pwd">
+              <div class="form-group has-feedback has-feedback-left">
+                <label class="control-label">邮箱</label>
+                <input type="email" class="form-control" placeholder="邮箱" />
+                <i class="glyphicon glyphicon-envelope form-control-feedback"></i> <span class="help-block"></span> </div>
+              <button type="submit" class="btn btn-success btn-block">确定</button>
+              <p><a id="back1">返回登录</a></p>
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- col6 -->
+        <div class="col-md-6">
+          <p class="lead">还不是学员...</p>
+          <p><img src="../../../images/picture1.png"></p>
+          <p><a class="btn btn-success btn-block" id="register_new" data-toggle="collapse" aria-expanded="false" aria-controls="register">一键注册</a></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- End of modal-body -->
+      <!--Registration Modal-->
+      <div class="modal-body collapse" id="register">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="well">
+              <form id="loginForm" method="POST" action="#">
+                <div class="form-group has-feedback has-feedback-left">
+                  <label class="control-label">邮箱</label>
+                  <input type="email" class="form-control" placeholder="邮箱" />
+                  <i class="glyphicon glyphicon-envelope form-control-feedback"></i> <span class="help-block"></span> </div>
+                <div class="form-group has-feedback has-feedback-left">
+                  <label class="control-label">用户名</label>
+                  <input type="text" class="form-control" placeholder="用户名" />
+                  <i class="glyphicon glyphicon-user form-control-feedback"></i> <span class="help-block"></span> </div>
+                <div class="form-group  has-feedback has-feedback-left ">
+                  <label for="password" class="control-label">密码</label>
+                  <input type="password" class="form-control" placeholder="密码" id="password1" name="password" value="" required="" title="Please enter your password">
+                  <i class="form-control-feedback glyphicon glyphicon-lock"></i> <span class="help-block"></span> </div>
+                <div class="form-group  has-feedback has-feedback-left ">
+                  <label for="password" class="control-label">确认密码</label>
+                  <input type="password" class="form-control" placeholder="确认密码" id="password2" name="password" value="" required="" title="Please enter your password">
+                  <i class="form-control-feedback glyphicon glyphicon-lock"></i> <span class="help-block"></span> </div>
+                <div id="loginErrorMsg" class="alert alert-error hide">用户名或密码有误</div>
+                <button type="submit" class="btn btn-success btn-block">注册</button>
+                <div class="collapse" id="forgot_pwd">
+                  <div class="form-group has-feedback has-feedback-left">
+                    <label class="control-label">邮箱</label>
+                    <input type="email" class="form-control" placeholder="邮箱" />
+                    <i class="glyphicon glyphicon-user form-control-feedback"></i> <span class="help-block"></span> </div>
+                </div>
+              </form>
+            </div>
+            <!-- well -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- col6 -->
+        <div class="col-md-6">
+          <p class="lead" style="margin-top:5px;">已有账号？</p>
+          <p style="margin-top:30px;"><img src="../../../images/picture1.png"></p>
+          <p style="margin-top:36px;"> <a href="#login" class="btn btn-success btn-block" id="getBack" data-toggle="collapse" aria-expanded="false" aria-controls="login">返回登录</a> </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- Modal registration-->
+    </div>
+    <!-- modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+	<header id="head" class="secondary">
+        <div class="container">
+            <h1>单词学习</h1>
+            <nav id="filter" >
+                <ul>
+                    <li><a href="#" style="color: white; margin-top: -15px;" data-filter=".dailyWord">每日一词</a></li>
+                    <li style="margin: 0 -10px;">|</li>
+                    <li><a href="#" style="color: white; margin-top: -15px;" data-filter=".unknownWords">查单词</a></li>
+                    <li style="margin: 0 -10px;">|</li>
+                    <li><a href="#" style="color: white" data-filter=".selectedArticle">精选文章</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- 此处为分功能展示，分别是每日一词、查单词、文章精选 -->
+<div class="container">
+    <div class="row">
+
+        <!--/span3-->
+        <div class="col-md-4">
+            <div class="grey-box-icon">
+                <div class="icon-box-top grey-box-icon-pos"> <img src="../../../images/2.png" alt="" /> </div>
+                <!--icon box top -->
+                <h4>每日一词</h4>
+                <p>我们为广大学员提供了优秀的课程，学员可以根据自己的需要和兴趣选择将要 学习的课程。</p>
+            </div>
+            <!--grey box -->
+        </div>
+        <!--/span3-->
+        <div class="col-md-4">
+            <div class="grey-box-icon">
+                <div class="icon-box-top grey-box-icon-pos"> <img src="../../../images/3.png" alt="" /> </div>
+                <!--icon box top -->
+                <h4>词汇通关</h4>
+                <p>为了帮助学员更好地学习，我们提供了单词学习的模块。在这里，学员可以自由选择单词的难度。</p>
+            </div>
+            <!--grey box -->
+        </div>
+        <!--/span3-->
+        <div class="col-md-4">
+            <div class="grey-box-icon">
+                <div class="icon-box-top grey-box-icon-pos"> <img src="../../../images/4.png" alt="" /> </div>
+                <!--icon box top -->
+                <h4>听力训练</h4>
+                <p>英语口语的困难常常是由于输入太少，通过听力训练进行大量输入，将给口语部分的学习带来方便。</p>
+
+            </div>
+            <!--grey box -->
+        </div>
+        <!--/span3-->
+    </div>
+</div>
+
+	<section class="container">
+		<div class="heading">
+			<!-- Heading -->
+			<h3>Range</h3>
+			<p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+			<br />
+		</div>
+		<div class="row flat">
+			<div class="col-lg-3 col-md-3 col-xs-6">
+				<ul class="plan plan1">
+					<li class="plan-name">Basic
+					</li>
+					<li class="plan-price">
+						<strong>$29</strong> Fee
+					</li>
+					<li>
+						<strong>08</strong> Responsive
+					</li>
+					<li>
+						<strong>12</strong> HTML5/CSS
+					</li>
+					<li>
+						<strong>15</strong> Flex
+					</li>
+					<li>
+						<strong>10</strong> Mobile App
+					</li>
+					<li>
+						<strong>Live</strong> Demo
+					</li>
+					<li class="plan-action">
+						<a href="#" class="btn">Signup</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-xs-6">
+				<ul class="plan plan2 featured">
+					<li class="plan-name">Standard
+					</li>
+					<li class="plan-price">
+						<strong>$59</strong> Fee
+					</li>
+					<li>
+						<strong>08</strong> Responsive
+					</li>
+					<li>
+						<strong>12</strong> HTML5/CSS
+					</li>
+					<li>
+						<strong>15</strong> Flex
+					</li>
+					<li>
+						<strong>10</strong> Mobile App
+					</li>
+					<li>
+						<strong>Live</strong> Demo
+					</li>
+					<li class="plan-action">
+						<a href="#" class="btn">Signup</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-xs-6">
+				<ul class="plan plan3">
+					<li class="plan-name">Advanced
+					</li>
+					<li class="plan-price">
+						<strong>$79</strong> Fee
+					</li>
+					<li>
+						<strong>08</strong> Responsive
+					</li>
+					<li>
+						<strong>12</strong> HTML5/CSS
+					</li>
+					<li>
+						<strong>15</strong> Flex
+					</li>
+					<li>
+						<strong>10</strong> Mobile App
+					</li>
+					<li>
+						<strong>Live</strong> Demo
+					</li>
+					<li class="plan-action">
+						<a href="#" class="btn">Signup</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-xs-6">
+				<ul class="plan plan4">
+					<li class="plan-name">Mighty
+					</li>
+					<li class="plan-price">
+						<strong>$109</strong> Fee
+					</li>
+					<li>
+						<strong>08</strong> Responsive
+					</li>
+					<li>
+						<strong>12</strong> HTML5/CSS
+					</li>
+					<li>
+						<strong>15</strong> Flex
+					</li>
+					<li>
+						<strong>10</strong> Mobile App
+					</li>
+					<li>
+						<strong>Live</strong> Demo
+					</li>
+					<li class="plan-action">
+						<a href="#" class="btn">Signup</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<footer id="footer">
+  <div class="container" style="margin-bottom: 10px">     
+    <h4>联系我们</h4>
+    <div class="contact-info"> 
+      您可以通过以下方式联系我们
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-map-marker"></i> 湖北省 武汉市 洪山区 珞瑜东路 华中科技大学
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-phone"></i> +86 123 4567 8901 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-envelope-o"></i> youremail@email.com 
+    </div>
+  </div>
+  <div class="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 panel">
+          <div class="panel-body">
+            <p class="simplenav"> <a href="../../../index.html">首页</a> | <a href="about.html">关于</a> | <a href="courses.html">课程</a> | <a href="words.html">单词</a> | <a href="listening.html">听力</a> | <a href="contact.html">联系我们</a> </p>
+          </div>
+        </div>
+        <div class="col-md-6 panel">
+          <div class="panel-body">
+            <p class="text-right"> Copyright &copy; 2016.Company name All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /row of panels -->
+    </div>
+  </div>
+</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script type='text/javascript' src='../../../dist/js/jquery.min.js'></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../../../dist/js/custom.js"></script>
+	<script type="text/javascript" src='../../../dist/js/jquery-1.9.1.min.js'></script>
+	<script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_4').camera({
+                transPeriod: 500,
+                time: 3000,
+				height: '600',
+				loader: 'false',
+				pagination: true,
+				thumbnails: false,
+				hover: false,
+                playPause: false,
+                navigation: false,
+				opacityOnGrid: false,
+				imagePath: '../../images/'
+			});
+
+		});
+	</script>
+	<script>
+		$('#myModal').on('shown.bs.modal', function () {
+			setTimeout(function (){
+				$('#username').focus();
+			}, 200);
+		});
+
+		var login = document.getElementById("login");
+		var register = document.getElementById("register");
+		var uname = document.getElementById("forgot_uname");
+		var pwd = document.getElementById("forgot_pwd");
+	
+		$("#register_new").on('click', function(){
+			$(login).slideUp(1000,function(){
+				$(register).toggleClass('collapse');
+			});
+		});
+
+		$("#getBack").on('click', function(){
+			$(register).slideDown(1000,function(){
+				$(login).show('slow');
+				$(register).addClass('collapse');
+			});	
+		});
+	
+		$("#getUname").on('click', function(){
+			$("#log_form").slideUp('swing',function(){
+				$(uname).removeClass('collapse');
+			});
+		});
+		$("#getPwd").on('click', function(){
+			$("#log_form").slideUp('swing',function(){
+				$(pwd).removeClass('collapse');
+			});
+		});	
+		$("#back").on('click', function(){
+			$("#log_form").show('swing',function(){			
+				$(uname).addClass('collapse');
+			});
+		});	
+		$("#back1").on('click', function(){
+			$("#log_form").show('swing',function(){			
+				$(pwd).addClass('collapse');
+			});
+		});	
+	</script>
+</body>
+</html>
