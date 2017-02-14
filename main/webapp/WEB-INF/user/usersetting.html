@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>个人中心</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        #wrapper {
+            width: 100%;
+        }
+        #head {
+            width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mod-header {
+            display: inline;
+            font-size: 66px;
+        }
+
+        #mod-header-topBar {
+
+        }
+        .mod-userbar {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            z-index: 300;
+        }
+
+        #setting-nav {
+            height: 42px;
+            width: 100%;
+            background: #fafafa;
+            z-index: 1;
+        }
+        .nav-1 {
+            height: 42px;
+            background-color: #2e82ff;
+            width: 100%;
+            border-bottom: #258bd6;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <div class="mod-header">
+                <a href="../index.html">
+                    <img src="../../images/user_setting.jpg" height="100px"/>
+                </a>
+            </div>
+            <div id="mod-header-topBar" class="mod-userbar">
+                <span>${sessionScope.sessionUser.username }</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="setting-nav">
+        <div class="nav-1">
+
+        </div>
+    </div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="page-header">
+                <h1>
+                    <small><span><strong>欢迎${sessionScope.sessionUser.username }来到个人中心</strong></span></small>
+                </h1>
+            </div>
+            <div class="tabbable tabs-left" id="tabs-917286">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a data-toggle="tab" href="#panel-512364">我的生词本</a>
+                    </li>
+                    <li>
+                        <a class="active" data-toggle="tab" href="#panel-77222">我的课程</a>
+                    </li>
+                    <li class="active">
+                        <a class="active" data-toggle="tab" href="#panel-77221">个人设置</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#panel-"
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="panel-512364">
+                        <table id="tab">
+                            <tr>
+                                <th>生词本id</th>
+                                <th>生词本名称</th>
+                                <th>描述</th>
+                                <th>创建日期</th>
+                            </tr>
+
+                            <c:forEach items="${wordbooksCustomList}" var="wordbooksCustom">
+                                <tr>
+                                    <td>${wordbooksCustom.wbookId}</td>
+                                    <td>${wordbooksCustom.wname}</td>
+                                    <td>${wordbooksCustom.wexpress}</td>
+                                    <td>${wordbooksCustom.wdate}</td>
+                                    <td><a href="${ctx}/wordbooksAddLoad">增加</a>
+                                        <a href="${ctx}/wordbooksEditLoad?wbookId=${wordbooksCustom.wbookId}">修改</a>
+                                        <a href="${ctx}/wordbooksDelById?wbookId=${wordbooksCustom.wbookId}">删除</a>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="panel-77222">
+                        <p>
+                            第二周部分
+                        </p>
+                    </div>
+                    <div class="tab-pane active" id="panel-77221">
+                        <div class="container-fluid">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="accordion" id="accordion-346126">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                                   data-parent="#accordion-346126"
+                                                   href="#accordion-element-260998">个人资料</a>
+                                            </div>
+                                            <div id="accordion-element-260998" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <div class="container-fluid">
+                                                        <div class="row-fluid">
+                                                            <div class="span12">
+
+
+                                                                <form action="${baseurl}/edit" method="post">
+                                                                    <input style="display:none" type="text" name="id"
+                                                                           value="${user.id}"/>
+                                                                    <legend>个人资料</legend>
+                                                                    <table>
+
+                                                                        <tr>
+                                                                            <th>
+                                                                                <legend>用户名:</legend>
+                                                                            </th>
+                                                                            <td>
+                                                                                <legend><input type="text"
+                                                                                               name="username"
+                                                                                               value="${user.username}"/>
+                                                                                </legend>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <th>密码</th>
+                                                                            <td><input type="text" name="password"
+                                                                                       value="${user.password}"/></td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <th>电话</th>
+                                                                            <td><input type="text" name="phone"
+                                                                                       value="${user.phone}"/></td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <th>邮箱</th>
+                                                                            <td><input type="text" name="email"
+                                                                                       value="${user.email}"/></td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <th>加密盐</th>
+                                                                            <td><input type="text" name="salt"
+                                                                                       value="${user.salt}"/></td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <th>角色</th>
+                                                                            <td><input type="text" name="roleId"
+                                                                                       value="${user.roleId}"/></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="2"><input type="submit"
+                                                                                                   value="修改"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </form>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse"
+                                                   data-parent="#accordion-346126"
+                                                   href="#accordion-element-756083">密码修改</a>
+                                            </div>
+                                            <div id="accordion-element-756083" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    功能块...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p class="tabs-left">
+            </p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+        </div>
+    </div>
+</div>
+</body>
+</html>
