@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background:#fff; /*白色*/
+    width:980px;
+    height: 420px;
+    margin:0 auto;   /*居中*/
+    text-align:center;
+    background-origin: content-box;
+}
+.core{
+    position: absolute;
+    top: 20%;
+    width:980px;
+    height: 420px;
+    background: url("../images/background.jpg") no-repeat ;
+}
+.container{
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    width: 260px;
+    height: 300px;
+    padding: 20px 0;
+    border: solid 1px #E3E3E3;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #888888;
+    color: #EBEBEB;
+}
+.container tr td a{
+    text-decoration: none;
+}
+.container tr td input{
+    border-radius: 5px;
+    border: solid 1px #E3E3E3;
+    color: #666666;
+}
+.container tr td button{
+    color: #666666;
+}
+h2{
+    text-align: center;
+    margin:20px;
+    font-weight: bold;
+}
+table{
+    margin: 0 auto;
+}
+
+table tr td{
+    text-align: right;
+    height: 30px;
+}
+
+
+
+
+.login_title {
+	margin-left: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.login_info {
+	margin-left: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 36px;
+	line-height: 36px;
+	color: #333333;
+}
+
+.login_input {
+	width: 150px;
+	height: 20px;
+	margin-left: 30px;
+	border: 1px solid #7F9DB9;
+	vertical-align: middle;
+}
+
+.login_code {
+	width: 70px;
+	height: 20px;
+	margin-left: 30px;
+	border: 1px solid #7F9DB9;
+	vertical-align: middle;
+}
+
+.btn {
+	width: 60px;
+	height: 25px;
+	border-width: 0px;
+	background-image: url(../img/login/btn-bg2.gif);
+	letter-spacing: 3px;
+	margin-right: 70px;
+	cursor: pointer;
+}
+
+.login_info img {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.errInfo {
+	display: none;
+	color: red;
+}
+
+.logo {
+	width: 100%;
+	height: 68px;
+	background: url(../img/login/logo2.png) no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/logo2.png';
+	)
+}
+
+.left_txt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	color: #666666;
+}
+
+.bottom {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 20px;
+}
