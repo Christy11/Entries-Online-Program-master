@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f18d0c-028d-46c1-aba0-988a6fec6cb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/webapp/images/picture1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/图标文件.ppt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/example.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_changeinfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_courses.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_upload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_wordlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/图标设计.ppt" afterPath="$PROJECT_DIR$/图标设计.ppt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/webapp/front/words.html" afterPath="$PROJECT_DIR$/main/webapp/front/words.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,21 +32,143 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="usersetting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="262" column="71" lean-forward="true" selection-start-line="262" selection-start-column="71" selection-end-line="262" selection-end-column="71" />
+              <folding>
+                <element signature="e#5897#6028#0" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#8872#8878#0" expanded="true" />
+                <element signature="e#8878#8884#0" expanded="true" />
+                <element signature="e#8884#8890#0" expanded="true" />
+                <element signature="e#8890#8896#0" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersetting_wordlist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_wordlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="285" column="73" lean-forward="false" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+              <folding>
+                <element signature="e#2266#2528#0" expanded="false" />
+                <element signature="e#6560#6691#0" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9261#9267#0" expanded="true" />
+                <element signature="e#9267#9273#0" expanded="true" />
+                <element signature="e#9273#9279#0" expanded="true" />
+                <element signature="e#9279#9285#0" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersetting_upload.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="285" column="73" lean-forward="false" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+              <folding>
+                <element signature="e#2266#2528#0" expanded="false" />
+                <element signature="e#6560#6691#0" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9253#9259#0" expanded="true" />
+                <element signature="e#9259#9265#0" expanded="true" />
+                <element signature="e#9265#9271#0" expanded="true" />
+                <element signature="e#9271#9277#0" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersetting_changeinfo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_changeinfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="285" column="65" lean-forward="false" selection-start-line="285" selection-start-column="65" selection-end-line="285" selection-end-column="65" />
+              <folding>
+                <element signature="e#2266#2528#0" expanded="false" />
+                <element signature="e#6560#6691#0" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9253#9259#0" expanded="true" />
+                <element signature="e#9259#9265#0" expanded="true" />
+                <element signature="e#9265#9271#0" expanded="true" />
+                <element signature="e#9271#9277#0" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usersetting_courses.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_courses.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6209">
+              <caret line="271" column="40" lean-forward="true" selection-start-line="271" selection-start-column="40" selection-end-line="271" selection-end-column="40" />
+              <folding>
+                <element signature="e#2266#2528#0" expanded="false" />
+                <element signature="e#6560#6691#0" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9253#9259#0" expanded="true" />
+                <element signature="e#9259#9265#0" expanded="true" />
+                <element signature="e#9265#9271#0" expanded="true" />
+                <element signature="e#9271#9277#0" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="7" />
+            <state relative-caret-position="108">
+              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usersetting.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="74" />
+              <folding>
+                <element signature="e#15578#15584#0" expanded="true" />
+                <element signature="e#15584#15590#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/dist/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="126" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/dist/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="2047" column="39" lean-forward="false" selection-start-line="2047" selection-start-column="39" selection-end-line="2047" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -50,8 +177,8 @@
       <file leaf-file-name="words.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/webapp/front/words.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9072">
-              <caret line="336" column="45" lean-forward="false" selection-start-line="336" selection-start-column="45" selection-end-line="336" selection-end-column="45" />
+            <state relative-caret-position="8613">
+              <caret line="319" column="90" lean-forward="false" selection-start-line="319" selection-start-column="35" selection-end-line="319" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -62,18 +189,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>top-ma</find>
-      <find>container</find>
-      <find>top-margin</find>
-      <find>news</find>
-      <find>caption</find>
-      <find>max-hei</find>
       <find>box-inner</find>
       <find>thumbnail</find>
       <find>row</find>
@@ -91,6 +213,19 @@
       <find>range</find>
       <find>change-pic-mid-bot</find>
       <find>#panel-512364&quot;&gt;</find>
+      <find>btn-info</find>
+      <find>list</find>
+      <find>ucenter</find>
+      <find>content</find>
+      <find>col-md-4</find>
+      <find>dott</find>
+      <find>dist</find>
+      <find>list-item</find>
+      <find>g-flow</find>
+      <find>changepwd</find>
+      <find>active</find>
+      <find>border-rig</find>
+      <find>chan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,7 +251,15 @@
         <option value="$PROJECT_DIR$/WEB-INF/jsp/front/words.html" />
         <option value="$PROJECT_DIR$/WEB-INF/user/test.html" />
         <option value="$PROJECT_DIR$/main/webapp/front/words.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/example.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/user_courses.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_changeinfo.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_upload.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_wordlist.html" />
         <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_courses.html" />
       </list>
     </option>
   </component>
@@ -127,10 +270,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="377" />
-    <option name="y" value="4" />
-    <option name="width" value="1319" />
-    <option name="height" value="878" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,74 +334,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entries-Online-Program-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -385,7 +460,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="images">
+            <PATH_ELEMENT USER_OBJECT="front">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -407,9 +482,103 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="front">
+            <PATH_ELEMENT USER_OBJECT="dist">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Entries-Online-Program-master">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="webapp">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dist">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entries-Online-Program-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -423,6 +592,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -507,12 +677,14 @@
       <workItem from="1487000004533" duration="604000" />
       <workItem from="1487034098977" duration="22460000" />
       <workItem from="1487063994259" duration="3104000" />
-      <workItem from="1487075470718" duration="1972000" />
+      <workItem from="1487075470718" duration="2034000" />
+      <workItem from="1487120134267" duration="9996000" />
+      <workItem from="1487135038720" duration="22295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80744000" />
+    <option name="totallyTimeSpent" value="113097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,25 +696,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="377" y="4" width="1319" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37239784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25932837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959327" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7719498" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,14 +731,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/dist/css/bootstrap-theme.css" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/user/find_Courses.html" />
-    <entry file="file://$PROJECT_DIR$/dist/js/jquery.cslider.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/about.html" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/words.html" />
     <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/dist/css/style.css" />
     <entry file="file://$PROJECT_DIR$/dist/css/bootstrap-theme.css" />
@@ -595,7 +760,6 @@
     <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/about.html" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/courses.html" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/listening.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/a.html" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/user/words_Learning.html" />
     <entry file="file://$PROJECT_DIR$/dist/css/style.css" />
@@ -609,14 +773,6 @@
     <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/Error-404.html" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/user/test.html" />
     <entry file="file://$PROJECT_DIR$/WEB-INF/jsp/front/wordLearning1.html" />
-    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/course/find_Courses.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -638,19 +794,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/example.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5319">
+          <caret line="197" column="9" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/webapp/front/words.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9072">
-          <caret line="336" column="45" lean-forward="false" selection-start-line="336" selection-start-column="45" selection-end-line="336" selection-end-column="45" />
+        <state relative-caret-position="8613">
+          <caret line="319" column="90" lean-forward="false" selection-start-line="319" selection-start-column="35" selection-end-line="319" selection-end-column="90" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/dist/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="2047" column="39" lean-forward="false" selection-start-line="2047" selection-start-column="39" selection-end-line="2047" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/dist/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="126" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="74" />
+          <folding>
+            <element signature="e#15578#15584#0" expanded="true" />
+            <element signature="e#15584#15590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/user_courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="361" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_wordlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="285" column="73" lean-forward="false" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+          <folding>
+            <element signature="e#2266#2528#0" expanded="false" />
+            <element signature="e#6560#6691#0" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9261#9267#0" expanded="true" />
+            <element signature="e#9267#9273#0" expanded="true" />
+            <element signature="e#9273#9279#0" expanded="true" />
+            <element signature="e#9279#9285#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="567">
+          <caret line="262" column="71" lean-forward="true" selection-start-line="262" selection-start-column="71" selection-end-line="262" selection-end-column="71" />
+          <folding>
+            <element signature="e#5897#6028#0" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#8872#8878#0" expanded="true" />
+            <element signature="e#8878#8884#0" expanded="true" />
+            <element signature="e#8884#8890#0" expanded="true" />
+            <element signature="e#8890#8896#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_changeinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="285" column="65" lean-forward="false" selection-start-line="285" selection-start-column="65" selection-end-line="285" selection-end-column="65" />
+          <folding>
+            <element signature="e#2266#2528#0" expanded="false" />
+            <element signature="e#6560#6691#0" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9253#9259#0" expanded="true" />
+            <element signature="e#9259#9265#0" expanded="true" />
+            <element signature="e#9265#9271#0" expanded="true" />
+            <element signature="e#9271#9277#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="285" column="73" lean-forward="false" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+          <folding>
+            <element signature="e#2266#2528#0" expanded="false" />
+            <element signature="e#6560#6691#0" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9253#9259#0" expanded="true" />
+            <element signature="e#9259#9265#0" expanded="true" />
+            <element signature="e#9265#9271#0" expanded="true" />
+            <element signature="e#9271#9277#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/user/usersetting_courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6209">
+          <caret line="271" column="40" lean-forward="true" selection-start-line="271" selection-start-column="40" selection-end-line="271" selection-end-column="40" />
+          <folding>
+            <element signature="e#2266#2528#0" expanded="false" />
+            <element signature="e#6560#6691#0" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9253#9259#0" expanded="true" />
+            <element signature="e#9259#9265#0" expanded="true" />
+            <element signature="e#9265#9271#0" expanded="true" />
+            <element signature="e#9271#9277#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
