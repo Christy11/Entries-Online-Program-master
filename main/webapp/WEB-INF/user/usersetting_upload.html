@@ -173,20 +173,9 @@
             position: relative;
             width: 779px;
             float: right;
+            border-left: 1px solid #dfdfdf;
         }
-        .words-note-list {
-            position: relative;
-            padding: 35px 30px;
-            border-left: 1px solid #dfdfdf ;
-        }
-        .g-flow {
-            width: 779px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .words-note-list-ul {
-            margin-right: -22px;
-        }
+
         .words-note-list-ul > li {
             width: 200px;
             height: 220px;
@@ -197,45 +186,36 @@
             margin-bottom: 30px;
             float: left;
         }
-        .words-note-card {
-            width: 200px;
-            height: 220px;
-            border: 1px solid #fff;
-            box-sizing: border-box;
-            margin: 0 auto;
-            position: relative;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+        .course-form {
+            margin: 25px 175px;
         }
-        .words-note-card:after {
-            position: absolute;
-            z-index: -1;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+        table {
+            white-space: normal;
+            font-size: 14px;
+            line-height: 24px;
         }
-        .words-note-card img {
-            margin: 10px 12px 5px 10px;
-            height: 180px;
+        table tr {
+            height: 45px;
         }
-        .words-note-card .words-add-img {
-            margin: 59px 59px 20px;
-            height: 80px;
+        .course-upload .lable{
+            width: 100px;
         }
-        .words-note-card a span {
+        .p_btn {
+            display: inline-block;
+            min-width: 80px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            font-family: "Microsoft YaHei UI";
+            color: #fff;
             text-align: center;
-        }
-        .words-note-card .card-title {
-            color: #333333;
-            font-size: 12px;
-            font-family: \5fae\8f6f\96c5\9ed1,\9ed1\4f53;
-            padding: 15px 45px 15px 65px;
-        }
-
-        .words-note-card card-title:hover {
-            text-decoration: none;
-            color: #3C7BDB;
+            cursor: pointer;
+            margin: 0 0 0 15px;
+            background-color: #3d84e8;
+            border: 1px solid #3d84e8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
         }
         #foot {
             text-align: center;
@@ -278,13 +258,13 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_upload.html">
-                        <span>上传课程</span>
+                    <a class="page-tab" href="usersetting_changeinfo.html">
+                        <span>个人设置</span>
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_changeinfo.html">
-                        <span>个人设置</span>
+                    <a class="page-tab" href="usersetting_upload.html">
+                        <span>上传课程</span>
                     </a>
                 </li>
             </ul>
@@ -309,7 +289,7 @@
                     <dd>
                         <ul class="clearfix">
                             <li class="changepwd">
-                                <a href="" target="_blank" aria-label="Change Password">
+                                <a href="usersetting_changepwd.html" aria-label="Change Password">
                                     <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;修改密码
                                 </a>
@@ -319,6 +299,74 @@
                 </dl>
             </div>
             <div class="mod-usetting-right">
+                <form method="post" action="${webroot}/sadmin/manage.do?action=add" class="course-form">
+                    <table class="course-upload">
+                        <tr>
+                            <td class="lable">课程名</td>
+                            <td><input type="text" name="class" id="class"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程开始时间</td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程等级</td>
+                            <td><select name="rank" class="box">
+                                <option value="CET4">CET4</option>
+                                <option value="CET6">CET6</option>
+                                <option value="GRE">GRE</option>
+                                <option value="IELTS">雅思</option>
+                                <option value="TOEFL">托福</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程类别</td>
+                            <td><select name="category" class="box">
+                                <option value="speak">口语</option>
+                                <option value="listen">听力</option>
+                                <option value="read">阅读</option>
+                                <option value="article">作文</option>
+                                <option value="else">其他</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程授课老师</td>
+                            <td><input type="text" name="classTeacher" id="classTeacher"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程图片</td>
+                            <td><input type="file" name="video" id="image"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程内容</td>
+                            <td><input type="file" name="video" id="video"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程简介</td>
+                            <td><textarea name="" rows="4" cols="30"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程点击率</td>
+                            <td><input type="text" name="dianji" id="dianji"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课程上传者</td>
+                            <td><input type="text" name="shangchuanzhe" id="shangchuanzhe"/></td>
+                        </tr>
+                        <tr>
+                            <td class="lable">课时</td>
+                            <td><input type="text" name="keshi" id="keshi"/></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td colspan="3">
+                                <input type="submit" value="确认添加" class="p_btn"/>
+                                <input type="reset"  value="重置" class="p_btn" id="reset"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
     </div>

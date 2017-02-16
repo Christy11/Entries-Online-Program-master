@@ -173,69 +173,82 @@
             position: relative;
             width: 779px;
             float: right;
+            border-left: 1px solid #dfdfdf;
         }
-        .words-note-list {
+        .com, .box.com{
+            margin: 20px;
+            background-color: #FBFBFB;
+            border: 1px solid #ddd;
+        }
+        .box {
             position: relative;
-            padding: 35px 30px;
-            border-left: 1px solid #dfdfdf ;
+            border: 1px solid #aaa;
+            border-top: 1px solid #ddd;
         }
-        .g-flow {
-            width: 779px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .words-note-list-ul {
-            margin-right: -22px;
-        }
-        .words-note-list-ul > li {
-            width: 200px;
-            height: 220px;
-            border: 1px solid #dfdfdf;
-            display: inline-block;
-            margin-right: 35px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            float: left;
-        }
-        .words-note-card {
-            width: 200px;
-            height: 220px;
-            border: 1px solid #fff;
-            box-sizing: border-box;
-            margin: 0 auto;
+        .box .head {
             position: relative;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+            min-height: 108px;
+            color: #333;
+            padding: 15px 115px;
         }
-        .words-note-card:after {
-            position: absolute;
-            z-index: -1;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+        .com .mainbox {
+            padding: 5px 160px;
+            position: relative;
         }
-        .words-note-card img {
-            margin: 10px 12px 5px 10px;
-            height: 180px;
+        .com .h30 {
+            min-height: 30px;
+            margin-bottom: 10px;
         }
-        .words-note-card .words-add-img {
-            margin: 59px 59px 20px;
-            height: 80px;
+        .com .c {
+            position: relative;
+            width: 590px;
+            line-height: 30px;
+            color: #666;
         }
-        .words-note-card a span {
+        .com .c6 {
+            width: 300px;
+        }
+        .com .c6 i{
+            color: red;
+        }
+        .com.c6 label {
+            width: 75px;
+        }
+        .com .sh {
+            width: 150px;
+            vertical-align: middle;
+        }
+        .txt {
+            height: 28px;
+            font: 14px/28px "Microsoft YaHei UI";
+            position: relative;
+            z-index: 1;
+            text-indent: 5px;
+        }
+        .box .btnbox {
+            padding: 0 0 25px;
+        }
+        .btnbox {
+            width: 100%;
             text-align: center;
+            padding: 15px 0;
         }
-        .words-note-card .card-title {
-            color: #333333;
-            font-size: 12px;
-            font-family: \5fae\8f6f\96c5\9ed1,\9ed1\4f53;
-            padding: 15px 45px 15px 65px;
-        }
-
-        .words-note-card card-title:hover {
-            text-decoration: none;
-            color: #3C7BDB;
+        .p_btn {
+            display: inline-block;
+            min-width: 80px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            font-family: "Microsoft YaHei UI";
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            margin: 0 10px;
+            background-color: #3d84e8;
+            border: 1px solid #3d84e8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
         }
         #foot {
             text-align: center;
@@ -278,13 +291,13 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_upload.html">
-                        <span>上传课程</span>
+                    <a class="page-tab" href="usersetting_changeinfo.html">
+                        <span>个人设置</span>
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_changeinfo.html">
-                        <span>个人设置</span>
+                    <a class="page-tab" href="usersetting_upload.html">
+                        <span>上传课程</span>
                     </a>
                 </li>
             </ul>
@@ -309,7 +322,7 @@
                     <dd>
                         <ul class="clearfix">
                             <li class="changepwd">
-                                <a href="" target="_blank" aria-label="Change Password">
+                                <a href="usersetting_changepwd.html" aria-label="Change Password">
                                     <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;修改密码
                                 </a>
@@ -319,6 +332,49 @@
                 </dl>
             </div>
             <div class="mod-usetting-right">
+                <div class="box mk com" id="basedetail">
+                    <div class="head" id="Basic">
+                        <div class="mainbox">
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>用户名</label>
+
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="base_name" class="ef" maxlength="40" type="text" placeholder="用户名">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>手机</label>
+
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="base_phone" class="ef" maxlength="40" type="text" placeholder="手机">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>邮箱</label>
+
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="base_email" class="ef" maxlength="40" type="text" placeholder="邮箱">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnbox">
+                        <span class="p_btn" id="basedetail_save" onclick="saveBaseClick(this)">保存</span>
+                        <span class="p_btn gray" id="basedetail_cancel" onclick="cancelButtonClick(this)">取消</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

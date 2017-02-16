@@ -4,15 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人中心</title>
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 可选的Bootstrap主题文件（一般不使用） -->
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/css/bootstrap-theme.css" media="screen">
+    <script type="text/javascript" src="../../dist/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../dist/js/bootstrap.min.js"></script>
     <style type="text/css">
         .clearfix {
             zoom: 1;
@@ -278,13 +273,13 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_upload.html">
-                        <span>上传课程</span>
+                    <a class="page-tab" href="usersetting_changeinfo.html">
+                        <span>个人设置</span>
                     </a>
                 </li>
                 <li>
-                    <a class="page-tab" href="usersetting_changeinfo.html">
-                        <span>个人设置</span>
+                    <a class="page-tab" href="usersetting_upload.html">
+                        <span>上传课程</span>
                     </a>
                 </li>
             </ul>
@@ -309,7 +304,7 @@
                     <dd>
                         <ul class="clearfix">
                             <li class="changepwd">
-                                <a href="" target="_blank" aria-label="Change Password">
+                                <a href="usersetting_changepwd.html" aria-label="Change Password">
                                     <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;修改密码
                                 </a>
@@ -323,7 +318,7 @@
                     <ul class="words-note-list-ul clearfix">
                         <li class="words-note-list-item">
                             <div class="words-note-card">
-                                <a href="###" title="点此新建生词本"><img class="words-add-img" src="../../images/add_note.jpg"><span class="card-title">新建生词本</span></a>
+                                <a  title="点此新建生词本" data-toggle="modal" data-target="#newlist"><img class="words-add-img" src="../../images/add_note.jpg"><span class="card-title">新建生词本</span></a>
                             </div>
                         </li>
                         <li class="words-note-list-item">
@@ -352,6 +347,33 @@
         </div>
     </div>
 </div>
+
+<div id="newlist" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="newlist" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="newListLabel" class="modal-title" style="font-family: 'Microsoft YaHei UI'">新建生词本</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-8" style="margin: auto 90px;">
+                    <div class="well" id="new_list_form">
+                        <form id="newListForm" method="POST" action="#">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="control-label">新建生词本</label>
+                                <input type="text" class="form-control" placeholder="请输入生词本的名字" required="" title="请输入生词本的名字" />
+                                <i class="glyphicon glyphicon-book form-control-feedback"></i> <span class="help-block"></span> </div>
+                            <button type="submit" class="btn btn-success">确定</button>
+                            <button type="reset" class="btn" data-dismiss="modal" aria-hidden="true" style="float: right">取消</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div id="foot">
     <div class="mod-footer">

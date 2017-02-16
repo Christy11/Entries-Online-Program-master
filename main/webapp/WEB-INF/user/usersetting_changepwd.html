@@ -169,69 +169,82 @@
             position: relative;
             width: 779px;
             float: right;
+            border-left: 1px solid #dfdfdf;
         }
-        .words-note-list {
+        .com, .box.com{
+            margin: 20px;
+            background-color: #FBFBFB;
+            border: 1px solid #ddd;
+        }
+        .box {
             position: relative;
-            padding: 35px 30px;
-            border-left: 1px solid #dfdfdf ;
+            border: 1px solid #aaa;
+            border-top: 1px solid #ddd;
         }
-        .g-flow {
-            width: 779px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .words-note-list-ul {
-            margin-right: -22px;
-        }
-        .words-note-list-ul > li {
-            width: 200px;
-            height: 220px;
-            border: 1px solid #dfdfdf;
-            display: inline-block;
-            margin-right: 35px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            float: left;
-        }
-        .words-note-card {
-            width: 200px;
-            height: 220px;
-            border: 1px solid #fff;
-            box-sizing: border-box;
-            margin: 0 auto;
+        .box .head {
             position: relative;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+            min-height: 108px;
+            color: #333;
+            padding: 15px 115px;
         }
-        .words-note-card:after {
-            position: absolute;
-            z-index: -1;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
+        .com .mainbox {
+            padding: 5px 160px;
+            position: relative;
         }
-        .words-note-card img {
-            margin: 10px 12px 5px 10px;
-            height: 180px;
+        .com .h30 {
+            min-height: 30px;
+            margin-bottom: 10px;
         }
-        .words-note-card .words-add-img {
-            margin: 59px 59px 20px;
-            height: 80px;
+        .com .c {
+            position: relative;
+            width: 590px;
+            line-height: 30px;
+            color: #666;
         }
-        .words-note-card a span {
+        .com .c6 {
+            width: 300px;
+        }
+        .com .c6 i{
+            color: red;
+        }
+        .com.c6 label {
+            width: 75px;
+        }
+        .com .sh {
+            width: 150px;
+            vertical-align: middle;
+        }
+        .txt {
+            height: 28px;
+            font: 14px/28px "Microsoft YaHei UI";
+            position: relative;
+            z-index: 1;
+            text-indent: 5px;
+        }
+        .box .btnbox {
+            padding: 0 0 25px;
+        }
+        .btnbox {
+            width: 100%;
             text-align: center;
+            padding: 15px 0;
         }
-        .words-note-card .card-title {
-            color: #333333;
-            font-size: 12px;
-            font-family: \5fae\8f6f\96c5\9ed1,\9ed1\4f53;
-            padding: 15px 45px 15px 65px;
-        }
-
-        .words-note-card card-title:hover {
-            text-decoration: none;
-            color: #3C7BDB;
+        .p_btn {
+            display: inline-block;
+            min-width: 80px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            font-family: "Microsoft YaHei UI";
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            margin: 0 10px;
+            background-color: #3d84e8;
+            border: 1px solid #3d84e8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
         }
         #foot {
             text-align: center;
@@ -305,7 +318,7 @@
                     <dd>
                         <ul class="clearfix">
                             <li class="changepwd">
-                                <a href="usersetting_changepwd.html" aria-label="Change Password">
+                                <a href="" target="_blank" aria-label="Change Password">
                                     <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;修改密码
                                 </a>
@@ -315,34 +328,59 @@
                 </dl>
             </div>
             <div class="mod-usetting-right">
-                <div class="words-note-list g-flow ">
-                    <ul class="words-note-list-ul clearfix">
-                        <li class="words-note-list-item">
-                            <div class="words-note-card">
-                                <a href="###" title="点此新建生词本"><img class="words-add-img" src="../../images/add_note.jpg"><span class="card-title">新建生词本</span></a>
+                <div class="box mk com" id="pwdchange">
+                    <div class="head" id="Pwd">
+                        <div class="mainbox">
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>原始密码</label>
+                                    <i>*</i>
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="origin_pwd" class="ef" maxlength="40" type="text" placeholder="初始密码">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li class="words-note-list-item">
-                            <div class="words-note-card">
-                                <a href="###" title="点击打开生词本"><img src="../../images/note_cover.jpg"><span class="card-title">我的生词本</span></a>
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>修改密码</label>
+                                    <i>*</i>
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="letter_pwd" class="ef" maxlength="40" type="text" placeholder="修改密码">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li class="words-note-list-item">
-                            <div class="words-note-card">
-                                <a href="###" title="点击打开生词本"><img src="../../images/note_cover.jpg"><span class="card-title">四级生词本</span></a>
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>再次确认</label>
+                                    <i>*</i>
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="confirm_pwd" class="ef" maxlength="40" type="text" placeholder="请再次输入修改后的密码">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li class="words-note-list-item">
-                            <div class="words-note-card">
-                                <a href="###" title="点击打开生词本"><img src="../../images/note_cover.jpg"><span class="card-title">六级生词本</span></a>
+                            <div class="h30">
+                                <div class="c c6">
+                                    <label>二次加密</label>
+                                    <i>*</i>
+                                    <div class="sh">
+                                        <div class="txt">
+                                            <input id="double_encode" class="ef" maxlength="40" type="text" placeholder="加密盐">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li class="words-note-list-item">
-                            <div class="words-note-card">
-                                <a href="###" title="点击打开生词本"><img src="../../images/note_cover.jpg"> <span class="card-title">雅思生词本</span></a>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="btnbox">
+                        <span class="p_btn" id="basedetail_save" onclick="saveBaseClick(this)">保存</span>
+                        <span class="p_btn gray" id="basedetail_cancel" onclick="cancelButtonClick(this)">取消</span>
+                    </div>
                 </div>
             </div>
         </div>

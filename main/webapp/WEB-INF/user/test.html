@@ -1,42 +1,44 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <title>css实现鼠标悬停时图片加边框效果</title>
-    <style type="text/css">
-        body{background:#222;color:#06c;}
-        em{ font-style:inherit;}
+    <meta charset="UTF-8">
+    <title>courseAdd</title>
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
 
-        img{background:white;margin:0 5px;width:70px;height:70px;}
 
-        img:hover{border:1px red solid;}
-        .demo2 img{border:2px solid transparent;}
-
-        .demo2 img:hover{border:1px red solid;}
-        .demo3 img:hover{width:68px;height:68px;border:2px solid yellow;}
-    </style>
-
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/css/bootstrap-theme.css" media="screen">
+    <script type="text/javascript" src="../../dist/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="demo1">
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <em>明显看到当img标签在hover的时候由于出现边框导致位移</em>
-</div>
-<div class="demo2">
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <em>给每个img添加border:1px solid transparent;世界就和平了</em>
-</div>
-<div class="demo3">
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <img src="/jscss/demoimg/wall_s6.jpg" />
-    <em>修改width和height,世界继续和平</em>
+<button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">登录</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-success" style="border-top-left-radius:5px;border-top-right-radius:5px;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新的生词本</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-8" style="margin: auto 90px;">
+                    <div class="well" id="new_list_form">
+                        <form id="newListForm" method="POST" action="#">
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="control-label">新建生词本</label>
+                                <input type="text" class="form-control" placeholder="请输入生词本的名字" required="" title="请输入生词本的名字" />
+                                <i class="glyphicon glyphicon-book form-control-feedback"></i> <span class="help-block"></span> </div>
+                            <button type="submit" class="btn btn-success" style="margin-right: 90px;">确定</button>
+                            <button type="reset" class="btn btn-success ">取消</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- End of modal-body -->
+        </div>
+        <!-- modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div>
 </body>
 </html>
