@@ -183,36 +183,71 @@
             padding-left: 50px;
         }
         .scan-history {
-            line-height: 52px;
             position: relative;
+            padding: 35px 30px;
+            border-left: 1px solid #dfdfdf ;
         }
-        .usetting-right-title {
-            font-size: 22px;
-            color: #404040;
-            font-family: \5fae\8f6f\96c5\9ed1,\9ed1\4f53;
+        .scan-history .usetting-right-title {
+            margin-top: -15px;
+            margin-bottom: 10px;
             font-weight: 400;
-            line-height: 40px;
-            padding-top: 20px;
+            font-size: 20px;
+            font-family: "Microsoft YaHei UI";
         }
-        .scan-history .g-flow {
-            position: relative;
-            width: 729px;
+        .g-flow {
+            width: 779px;
             margin: 0 auto;
             text-align: left;
         }
-        .scan-history .his-cou-list {
+        .his-cou-list-ul {
+            margin-right: -22px;
+        }
+        .his-cou-list-ul > li {
+            width: 200px;
+            height: 220px;
+            border: 1px solid #dfdfdf;
+            display: inline-block;
+            margin-right: 35px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            float: left;
+        }
+        .his-cou-card {
+            width: 200px;
+            height: 220px;
+            border: 1px solid #fff;
+            box-sizing: border-box;
             margin: 0 auto;
-            width: 180px;
-            height: 240px;
-            background: #ffa;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .his-cou-card:after {
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .his-cou-card img {
+            margin: 10px 12px 5px 10px;
+            height: 180px;
+        }
+        .his-cou-card a span {
+            text-align: center;
+        }
+        .his-cou-card .card-title {
+            color: #333333;
+            font-size: 12px;
+            font-family: \5fae\8f6f\96c5\9ed1,\9ed1\4f53;
+            padding: 15px 45px 15px 65px;
         }
 
-        .his-cou-list .history-link .history_cour {
-            margin: 15px -25px;
-            height: 150px;
-            width: 150px;
+        .his-cou-card card-title:hover {
+            text-decoration: none;
+            color: #3C7BDB;
         }
-
         #foot {
             text-align: center;
             color: #666;
@@ -297,10 +332,29 @@
                 </div>
                 <div class="mod-usetting-right">
                     <div class="scan-history">
-                        <p class="usetting-right-title">浏览过的课程</p>
+                        <p class="usetting-right-title clearfix">浏览过的课程</p>
                         <div class="g-flow">
-                            <ul class="his-cou-list">
-                                <li><a class="history-link" href="###"><img src="../../images/photo-1.jpg" class="history_cour" ></a>                                <li><a class="history-link" href="###"><img src="../../images/photo-1.jpg" class="history_cour" ></a></li>
+                            <ul class="his-cou-list-ul clearfix">
+                                <li class="his-cou-list-item">
+                                    <div class="his-cou-card">
+                                        <a href="###" title="点击打开课程"><img src="../../images/photo-1.jpg"><span class="card-title">王一一一的课</span></a>
+                                    </div>
+                                </li>
+                                <li class="his-cou-list-item">
+                                    <div class="his-cou-card">
+                                        <a href="###" title="点击打开课程"><img src="../../images/photo-1.jpg"><span class="card-title">王一一一的课</span></a>
+                                    </div>
+                                </li>
+                                <li class="his-cou-list-item">
+                                    <div class="his-cou-card">
+                                        <a href="###" title="点击打开课程"><img src="../../images/photo-1.jpg"><span class="card-title">王一一一的课</span></a>
+                                    </div>
+                                </li>
+                                <li class="his-cou-list-item">
+                                    <div class="his-cou-card">
+                                        <a href="###" title="点击打开课程"><img src="../../images/photo-1.jpg"><span class="card-title">王一一一的课</span></a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
