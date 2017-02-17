@@ -360,9 +360,15 @@
                     <div class="well" id="new_list_form">
                         <form id="newListForm" method="POST" action="#">
                             <div class="form-group has-feedback has-feedback-left">
-                                <label class="control-label">新建生词本</label>
+                                <label class="control-label">生词本名字</label>
                                 <input type="text" class="form-control" placeholder="请输入生词本的名字" required="" title="请输入生词本的名字" />
-                                <i class="glyphicon glyphicon-book form-control-feedback"></i> <span class="help-block"></span> </div>
+                                <i class="glyphicon glyphicon-book form-control-feedback"></i> <span class="help-block"></span>
+                            </div>
+                            <div class="form-group has-feedback has-feedback-left">
+                                <label class="control-label">生词本描述</label>
+                                <input type="text" class="form-control" placeholder="请输入对生词本的描述" name="wexpress"/>
+                                <i class="glyphicon glyphicon-pencil form-control-feedback"></i>
+                            </div>
                             <button type="submit" class="btn btn-success">确定</button>
                             <button type="reset" class="btn" data-dismiss="modal" aria-hidden="true" style="float: right">取消</button>
                         </form>
